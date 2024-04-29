@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- start header -->
+    <header id="header">
+      <div class="logo">
+        <a href="#"><img id="lol" src="pic/bulb.png" alt="" />Furni</a>
+      </div>
+      <ul class="navigation">
+        <li><a href="#home" class="active">home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#features">features</a></li>
+        <li><a href="#new-arrival">new arrival</a></li>
+        <li><a href="#team">team</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <div class="bars">
+        <img id="bar" src="pic/menu.png" alt="" />
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- start home  -->
+    <div class="big-bg" id="home">
+      <div class="bg-content">
+        <h1>
+          Quality is the best thing <br />
+          in the business
+        </h1>
+        <hr />
+        <p>
+          We make our products in the best shape for your happiness, <br />
+          so we hope to build a bridge of trust with you.
+        </p>
+        <div class="bg-link">
+          <a href="#">shop Now</a>
+        </div>
+      </div>
+      <div class="bg-form">
+        <form
+          method="post"
+          action="javascript:;"
+          id="form1"
+          onsubmit="return validateForm('form1')"
+        >
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control name"
+              id="name"
+              aria-describedby="emailHelp"
+              placeholder="ex: john"
+            />
+            <small
+              class="form-text"
+              id="error-name"
+              style="color: red; font-weight: bold;"
+            ></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control email"
+              id="email"
+              aria-describedby="emailHelp"
+              placeholder="ex: example@gmail.com"
+            />
+            <small
+              class="form-text"
+              id="error-email"
+              style="color: red; font-weight: bold;"
+            ></small>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="text"
+              class="form-control phone"
+              id="phone"
+              aria-describedby="emailHelp"
+              placeholder="ex: xxx xxx xx58"
+            />
+            <small
+              class="form-text"
+              id="error-phone"
+              style="color: red; font-weight: bold;"
+            ></small>
+          </div>
+
+          <div class="form-group">
+            <label for="msg">Your Requirement</label>
+            <textarea
+              class="form-control msg"
+              id="msg"
+              rows="3"
+              placeholder="Your Requirement"
+            ></textarea>
+            <small
+              class="form-text"
+              id="error-msg"
+              style="color: red; font-weight: bold;"
+            ></small>
+          </div>
+
+          <button type="submit" name="submit" class="btn btn-primary">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- end home  -->
+
+    <!-- start Collections metrial  -->
+    <div class="big-collection">
+      <div class="collect-flex">
+        <div class="collect">
+          <div class="image">
+            <img src="pic/chair4.jpg" alt="" />
+          </div>
+          <div class="link">
+            <a href="#">chair</a>
+          </div>
+        </div>
+
+        <div class="collect">
+          <div class="image">
+            <img src="pic/chair5.jpg" alt="" />
+          </div>
+          <div class="link">
+            <a href="#">decoration</a>
+          </div>
+        </div>
+
+        <div class="collect">
+          <div class="image">
+            <img src="pic/chair3.jpg" alt="" />
+          </div>
+          <div class="link">
+            <a href="#">furniture</a>
+          </div>
+        </div>
+
+        <div class="collect">
+          <div class="image">
+            <img src="pic/bed.jpg" alt="" />
+          </div>
+          <div class="link">
+            <a href="#">bed</a>
+          </div>
+        </div>
+
+        <div class="collect">
+          <div class="image">
+            <img src="pic/chair2.jpg" alt="" />
+          </div>
+          <div class="link">
+            <a href="#">armchair</a>
+          </div>
+        </div>
+
+        <div class="collect">
+          <div class="image">
+            <img src="pic/couch.jpg" alt="" />
+          </div>
+          <div class="link">
+            <a href="#">couch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Collections metrial  -->
+
+    <!-- start About Section  -->
+    <div class="about-sec">
+      <div class="about-left">
+        <img src="./pic/furn2.jpg" alt="" />
+      </div>
+      <div class="about-right">
+        <div class="about-title">
+          <h2>About Company</h2>
+          <p>Quality is the easiest way to make beautiful products.</p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            magnam porro nesciunt aliquid laboriosam voluptas corporis nulla
+            quia, nisi, vero repellat totam ea ducimus repellendus hic,
+            inventore consectetur rerum ad! Repellendus dicta atque libero
+            praesentium, error veritatis quasi fuga a.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            magnam porro nesciunt aliquid laboriosam voluptas corporis nulla
+            quia, nisi, vero repellat totam ea ducimus repellendus hic,
+            inventore consectetur rerum ad! Repellendus dicta atque libero
+            praesentium, error veritatis quasi fuga a.
+          </p>
+          <div class="about-btn">
+            <a href="javascript:;">Discover More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About Section  -->
+
+    <!-- start Our Projects  -->
+    <div class="big-shop" id="shop">
+      <div class="shop-title">
+        <h2>
+          we are very proud to present you <br />
+          our furniture
+        </h2>
+        <p>Quality is the easiest way to make beautiful products.</p>
+      </div>
+      <div class="shop-flex">
+        <div class="shop-one">
+          <div class="image-one">
+            <img src="pic/furn1.jpg" alt="" />
+            <div class="overlay">
+              <div class="txt">
+                <h3>White Chair</h3>
+                <section><span>Furniture</span> / Design</section>
+              </div>
+            </div>
+          </div>
+
+          <div class="image-one">
+            <img src="pic/furn2.jpg" alt="" />
+            <div class="overlay">
+              <div class="txt">
+                <h3>Blue Chair</h3>
+                <section><span>Furniture</span> / Design</section>
+                <div class="link">
+                  <a href="#"
+                    >Shop Now <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-one">
+          <div class="image-one">
+            <img src="pic/furn3.jpg" alt="" />
+            <div class="overlay">
+              <div class="txt">
+                <h3>Black Chair</h3>
+                <section><span>Furniture</span> / Design</section>
+                <div class="link">
+                  <a href="#"
+                    >Shop Now <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="image-one">
+            <img src="pic/furn4.jpg" alt="" />
+            <div class="overlay">
+              <div class="txt">
+                <h3>White lamp</h3>
+                <section><span>Furniture</span> / Design</section>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-two">
+          <img src="pic/furn6.jpg" alt="" />
+          <div class="overlay">
+            <div class="txt">
+              <h3>Brown Chairs</h3>
+              <section><span>Furniture</span> / Design</section>
+              <div class="link">
+                <a href="#"
+                  >Shop Now <i class="fas fa-long-arrow-alt-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Our Projects  -->
+
+    <!-- start Furniture Items -->
+    <div class="big-furn" id="new-arrival">
+      <div class="furn-title">
+        <h2>
+          Discover our furniture from our <br />
+          resources
+        </h2>
+        <p>View our everday amazing products.</p>
+      </div>
+      <div class="big-part">
+        <img src="pic/bg_image.png" alt="" />
+        <div class="text-inside">
+          <img src="pic/plus.png" alt="" class="plus" />
+          <div class="text-box">
+            <div>
+              <img src="pic/product6.jpg" alt="" />
+            </div>
+            <div>
+              <h5>new couch</h5>
+              <p>take our furniture with perfectly.</p>
+              <div class="link">
+                <a href="#">Get Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Furniture Items -->
+
+    <!-- start Our Product Items  -->
+    <div class="big-product" id="features">
+      <div class="product-title">
+        <p>browse our items</p>
+        <h2>Ideal for your home</h2>
+        <hr />
+      </div>
+      <div class="product-flex">
+        <div class="product-one">
+          <div class="product-image">
+            <img src="pic/product1.jpg" alt="" />
+            <div class="overlay">
+              <h6>Service Name</h6>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                nemo ratione magnam atque explicabo dolore, dignissimos eligendi
+                perferendis dolores consectetur?
+              </p>
+              <div class="overlay-btn">
+                <a href="javascript:;">Call</a>
+                <a href="whatsapp:;">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="left">
+              <h4>White vase</h4>
+            </div>
+            <div class="right">
+              <section>$44.00</section>
+            </div>
+          </div>
+          <article>decoration</article>
+        </div>
+
+        <div class="product-one">
+          <div class="product-image">
+            <img src="pic/product2.jpg" alt="" />
+            <div class="overlay">
+              <h6>Service Name</h6>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                nemo ratione magnam atque explicabo dolore, dignissimos eligendi
+                perferendis dolores consectetur?
+              </p>
+              <div class="overlay-btn">
+                <a href="javascript:;">Call</a>
+                <a href="whatsapp:;">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="left">
+              <h4>neon light</h4>
+            </div>
+            <div class="right">
+              <section>$16.00</section>
+            </div>
+          </div>
+          <article>lighting</article>
+        </div>
+
+        <div class="product-one">
+          <div class="product-image">
+            <img src="pic/product3.jpg" alt="" />
+            <div class="overlay">
+              <h6>Service Name</h6>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                nemo ratione magnam atque explicabo dolore, dignissimos eligendi
+                perferendis dolores consectetur?
+              </p>
+              <div class="overlay-btn">
+                <a href="javascript:;">Call</a>
+                <a href="whatsapp:;">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="left">
+              <h4>gray chair</h4>
+            </div>
+            <div class="right">
+              <section>$53.00</section>
+            </div>
+          </div>
+          <article>furniture</article>
+        </div>
+
+        <div class="product-one">
+          <div class="product-image">
+            <img src="pic/product4.jpg" alt="" />
+            <div class="overlay">
+              <h6>Service Name</h6>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                nemo ratione magnam atque explicabo dolore, dignissimos eligendi
+                perferendis dolores consectetur?
+              </p>
+              <div class="overlay-btn">
+                <a href="javascript:;">Call</a>
+                <a href="whatsapp:;">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="left">
+              <h4>cup holder</h4>
+            </div>
+            <div class="right">
+              <section>$19.00</section>
+            </div>
+          </div>
+          <article>decoration</article>
+        </div>
+
+        <div class="product-one">
+          <div class="product-image">
+            <img src="pic/product5.jpg" alt="" />
+            <div class="overlay">
+              <h6>Service Name</h6>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                nemo ratione magnam atque explicabo dolore, dignissimos eligendi
+                perferendis dolores consectetur?
+              </p>
+              <div class="overlay-btn">
+                <a href="javascript:;">Call</a>
+                <a href="whatsapp:;">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="left">
+              <h4>White vase</h4>
+            </div>
+            <div class="right">
+              <section>$26.00</section>
+            </div>
+          </div>
+          <article>decoration</article>
+        </div>
+
+        <div class="product-one">
+          <div class="product-image">
+            <img src="pic/product6.jpg" alt="" />
+            <div class="overlay">
+              <h6>Service Name</h6>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                nemo ratione magnam atque explicabo dolore, dignissimos eligendi
+                perferendis dolores consectetur?
+              </p>
+              <div class="overlay-btn">
+                <a href="javascript:;">Call</a>
+                <a href="whatsapp:;">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="left">
+              <h4>gray sofa</h4>
+            </div>
+            <div class="right">
+              <section>$165.00</section>
+            </div>
+          </div>
+          <article>furniture</article>
+        </div>
+
+        <div class="product-one">
+          <div class="product-image">
+            <img src="pic/product7.jpg" alt="" />
+            <div class="overlay">
+              <h6>Service Name</h6>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                nemo ratione magnam atque explicabo dolore, dignissimos eligendi
+                perferendis dolores consectetur?
+              </p>
+              <div class="overlay-btn">
+                <a href="javascript:;">Call</a>
+                <a href="whatsapp:;">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="left">
+              <h4>baby chair</h4>
+            </div>
+            <div class="right">
+              <section>$120.00</section>
+            </div>
+          </div>
+          <article>furniture</article>
+        </div>
+
+        <div class="product-one">
+          <div class="product-image">
+            <img src="pic/product8.jpg" alt="" />
+            <div class="overlay">
+              <h6>Service Name</h6>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+                nemo ratione magnam atque explicabo dolore, dignissimos eligendi
+                perferendis dolores consectetur?
+              </p>
+              <div class="overlay-btn">
+                <a href="javascript:;">Call</a>
+                <a href="whatsapp:;">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <div class="left">
+              <h4>read chair</h4>
+            </div>
+            <div class="right">
+              <section>$115.00</section>
+            </div>
+          </div>
+          <article>furniture</article>
+        </div>
+      </div>
+    </div>
+    <!-- end Our Product Items  -->
+
+    <!-- start fun fact OR Videos -->
+    <!-- <div class="bg-show">
+        <div class="link">
+            <a href="#" class="link_a">play <img src="pic/right-chevron.png" alt=""></a>
+        </div>
+        <div class="overlay">
+            <div class="image">
+                <img src="pic/x.png" alt="" class="cancel">
+                <video src="furniture.mp4" id="video"></video>
+                <div class="bg-player">
+                    <img class="player" src="pic/play.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- end fun fact OR Videos -->
+
+
+    <!-- ----- Start Footer Form ------  -->
+    <div class="footer-form">
+        <div class="footer_form_left"></div>
+        <div class="footer_form_right"></div>
+    </div>
+    <!-- ----- End Footer Form --------  -->
+
+
+    <!-- start Footer Image Marquee  -->
+    <div class="footer-image" id="contact">
+      <div class="image1">
+        <img src="pic/footer1.jpg" alt="" />
+        <div class="insta">
+          <img src="pic/insta.png" alt="" />
+        </div>
+      </div>
+      <div class="image1">
+        <img src="pic/footer2.jpg" alt="" />
+        <div class="insta">
+          <img src="pic/insta.png" alt="" />
+        </div>
+      </div>
+      <div class="image1">
+        <img src="pic/footer3.jpg" alt="" />
+        <div class="insta">
+          <img src="pic/insta.png" alt="" />
+        </div>
+      </div>
+      <div class="image1">
+        <img src="pic/footer4.jpg" alt="" />
+        <div class="insta">
+          <img src="pic/insta.png" alt="" />
+        </div>
+      </div>
+      <div class="image1">
+        <img src="pic/footer5.jpg" alt="" />
+        <div class="insta">
+          <img src="pic/insta.png" alt="" />
+        </div>
+      </div>
+      <div class="image1">
+        <img src="pic/footer6.jpg" alt="" />
+        <div class="insta">
+          <img src="pic/insta.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- end Footer Image Marquee  -->
+
+    <!-- start footer section  -->
+
+    <!-- <div class="bg-footer">
+        <div class="footer-flex">
+            <div class="footer1">
+                <h2>furniture</h2>
+                <section>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Laboriosam exercitationem eius labore commodi illum autem asperiores doloribus praesentium non ut.
+                </section>
+            </div>
+            <div class="footer1">
+                <h2>helpful links</h2>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our blog</a></li>
+                <li><a href="#">visit site</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#">apply a job</a></li>
+            </div>
+            <div class="footer1">
+                <h2>shopping</h2>
+                <li><a href="#">online cards</a></li>
+                <li><a href="#">return policy</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">inventory</a></li>
+            </div>
+            <div class="footer1">
+                <h2>payment method</h2>
+                <section>
+                    select one of the most common ways to pay a money for our products.
+                </section>
+                <div class="footer-logo">
+                    <img src="pic/footer-logo.png" alt="">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copy">
+            <section>
+                copyright &copy; at 2021 by <span>web tutorial.</span>
+            </section>
+        </div>
+    </div> -->
+
+    <!-- end footer section  -->
+
+    <!-- start scroll to top  -->
+    <div class="top">
+      <a href="javascript:;"
+        ><img src="./pic/whatsapp.png" alt="Sticky-btn"
+      /></a>
+      <a href="javascript:;"><img src="./pic/call.png" alt="Sticky-btn" /></a>
+    </div>
+    <!-- end scroll to top  -->
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="main.js"></script>
+  </body>
+</html>
