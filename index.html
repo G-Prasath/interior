@@ -8,13 +8,15 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
@@ -25,10 +27,10 @@
       </div>
       <ul class="navigation">
         <li><a href="#home" class="active">home</a></li>
-        <li><a href="#shop">Shop</a></li>
-        <li><a href="#features">features</a></li>
-        <li><a href="#new-arrival">new arrival</a></li>
-        <li><a href="#team">team</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resources">Resourecs</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#contact">contact</a></li>
       </ul>
       <div class="bars">
@@ -68,10 +70,10 @@
               id="name"
               aria-describedby="emailHelp"
               placeholder="ex: john"
+              autocomplete="off"
             />
             <small
-              class="form-text"
-              id="error-name"
+              class="form-text error-name"
               style="color: red; font-weight: bold;"
             ></small>
           </div>
@@ -84,10 +86,10 @@
               id="email"
               aria-describedby="emailHelp"
               placeholder="ex: example@gmail.com"
+              autocomplete="off"
             />
             <small
-              class="form-text"
-              id="error-email"
+              class="form-text error-email"
               style="color: red; font-weight: bold;"
             ></small>
           </div>
@@ -100,10 +102,10 @@
               id="phone"
               aria-describedby="emailHelp"
               placeholder="ex: xxx xxx xx58"
+              autocomplete="off"
             />
             <small
-              class="form-text"
-              id="error-phone"
+              class="form-text error-phone"
               style="color: red; font-weight: bold;"
             ></small>
           </div>
@@ -115,15 +117,20 @@
               id="msg"
               rows="3"
               placeholder="Your Requirement"
+              autocomplete="off"
             ></textarea>
             <small
-              class="form-text"
-              id="error-msg"
+              class="form-text error-msg"
               style="color: red; font-weight: bold;"
             ></small>
           </div>
 
-          <button type="submit" name="submit" class="btn btn-primary">
+          <button
+            type="submit"
+            name="submit"
+            class="btn btn-primary"
+            style="margin-top: 10px;"
+          >
             Submit
           </button>
         </form>
@@ -192,7 +199,7 @@
     <!-- end Collections metrial  -->
 
     <!-- start About Section  -->
-    <div class="about-sec">
+    <div class="about-sec" id="about">
       <div class="about-left">
         <img src="./pic/furn2.jpg" alt="" />
       </div>
@@ -224,7 +231,7 @@
     <!-- End About Section  -->
 
     <!-- start Our Projects  -->
-    <div class="big-shop" id="shop">
+    <div class="big-shop" id="projects">
       <div class="shop-title">
         <h2>
           we are very proud to present you <br />
@@ -306,7 +313,7 @@
     <!-- end Our Projects  -->
 
     <!-- start Furniture Items -->
-    <div class="big-furn" id="new-arrival">
+    <div class="big-furn" id="resources">
       <div class="furn-title">
         <h2>
           Discover our furniture from our <br />
@@ -336,7 +343,7 @@
     <!-- end Furniture Items -->
 
     <!-- start Our Product Items  -->
-    <div class="big-product" id="features">
+    <div class="big-product" id="services">
       <div class="product-title">
         <p>browse our items</p>
         <h2>Ideal for your home</h2>
@@ -563,60 +570,213 @@
     <!-- end Our Product Items  -->
 
     <!-- ----- Start Footer Form ------  -->
-    <div class="footer-form">
-        <div class="footer_form_left"></div>
-        <div class="footer_form_right"></div>
+    <div class="big-product" id="contact">
+      <div class="product-title">
+        <p>Let's Get in Touch</p>
+        <h2>Contact Form</h2>
+        <hr />
+      </div>
+      <div class="footer_form">
+        <div class="footer_form_left">
+          <img src="./pic/furn6.jpg" alt="Image" />
+        </div>
+        <div class="footer_form_right">
+          <form
+            method="post"
+            action="javascript:;"
+            id="form2"
+            onsubmit="return validateForm('form2')"
+          >
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control name"
+                id="name"
+                aria-describedby="emailHelp"
+                placeholder="ex: john"
+                autocomplete="off"
+              />
+              <small
+                class="form-text error-name"
+                style="color: red; font-weight: bold;"
+              ></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control email"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="ex: example@gmail.com"
+                autocomplete="off"
+              />
+              <small
+                class="form-text error-email"
+                style="color: red; font-weight: bold;"
+              ></small>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="text"
+                class="form-control phone"
+                id="phone"
+                aria-describedby="emailHelp"
+                placeholder="ex: xxx xxx xx58"
+                autocomplete="off"
+              />
+              <small
+                class="form-text error-phone"
+                style="color: red; font-weight: bold;"
+              ></small>
+            </div>
+
+            <div class="form-group">
+              <label for="msg">Your Requirement</label>
+              <textarea
+                class="form-control msg"
+                id="msg"
+                rows="3"
+                placeholder="Your Requirement"
+                autocomplete="off"
+              ></textarea>
+              <small
+                class="form-text error-msg"
+                style="color: red; font-weight: bold;"
+              ></small>
+            </div>
+
+            <button
+              type="submit"
+              name="submit"
+              class="btn btn-primary"
+              style="margin-top: 10px;"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
     <!-- ----- End Footer Form --------  -->
 
-
     <!-- start Footer Image Marquee  -->
-    <div class="footer-image" id="contact">
-      <div class="image1">
-        <img src="pic/footer1.jpg" alt="" />
-        <div class="insta">
-          <img src="pic/insta.png" alt="" />
-        </div>
+    <div class="footer-image">
+      <div class="footer-slide">
+        <img src="pic/footer1.jpg" alt="footer-image" />
+        <img src="pic/footer2.jpg" alt="footer-image" />
+        <img src="pic/footer3.jpg" alt="footer-image" />
+        <img src="pic/footer4.jpg" alt="footer-image" />
+        <img src="pic/footer5.jpg" alt="footer-image" />
+        <img src="pic/footer6.jpg" alt="footer-image" />
       </div>
-      <div class="image1">
-        <img src="pic/footer2.jpg" alt="" />
-        <div class="insta">
-          <img src="pic/insta.png" alt="" />
-        </div>
-      </div>
-      <div class="image1">
-        <img src="pic/footer3.jpg" alt="" />
-        <div class="insta">
-          <img src="pic/insta.png" alt="" />
-        </div>
-      </div>
-      <div class="image1">
-        <img src="pic/footer4.jpg" alt="" />
-        <div class="insta">
-          <img src="pic/insta.png" alt="" />
-        </div>
-      </div>
-      <div class="image1">
-        <img src="pic/footer5.jpg" alt="" />
-        <div class="insta">
-          <img src="pic/insta.png" alt="" />
-        </div>
-      </div>
-      <div class="image1">
-        <img src="pic/footer6.jpg" alt="" />
-        <div class="insta">
-          <img src="pic/insta.png" alt="" />
-        </div>
+
+      <div class="footer-slide">
+        <img src="pic/footer1.jpg" alt="footer-image" />
+        <img src="pic/footer2.jpg" alt="footer-image" />
+        <img src="pic/footer3.jpg" alt="footer-image" />
+        <img src="pic/footer4.jpg" alt="footer-image" />
+        <img src="pic/footer5.jpg" alt="footer-image" />
+        <img src="pic/footer6.jpg" alt="footer-image" />
       </div>
     </div>
     <!-- end Footer Image Marquee  -->
 
+    <!----- Start Footer content ----->
+    <div class="footer-content">
+      <div class="one footer_logo">
+        <a href="javascript:;" class="footer-logo">
+          <h6>LOGO</h6>
+        </a>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, iure?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quod!
+        </p>
+        <ul>
+          <li>
+            <a href="javascript:;"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="javascript:;"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="javascript:;"
+              ><i class="fa-brands fa-square-pinterest"></i
+            ></a>
+          </li>
+          <li>
+            <a href="javascript:;"
+              ><i class="fa-brands fa-square-x-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="two footer_links">
+        <h6>
+          Usefull Links
+        </h6>
+        <ul>
+          <li>
+            <a href="javascript:;">Home</a>
+          </li>
+          <li>
+            <a href="javascript:;">shop</a>
+          </li>
+          <li>
+            <a href="javascript:;">Arrival</a>
+          </li>
+          <li>
+            <a href="javascript:;">Contact</a>
+          </li>
+          <li>
+            <a href="javascript:;">Features</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="three footer_contacts">
+        <h6>
+          Contact Info
+        </h6>
+        <ul>
+          <li>
+            <div class="add_container">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Gee-Gee Complex, Mount Road, Chennai - 600 002 No: 5, 2nd Street, Thiruvin Nagar, Kovilambakkam, Chennai - 600 129.</p>
+            </div>
+          </li>
+          <li>
+            <div class="phone_container">
+              <i class="fa-solid fa-phone-volume"></i>
+              <a href="tel:9840812344">+91 9840812344</a>
+            </div>
+          </li>
+          <li>
+            <div class="email_container">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@amazmodular.com">info@amazmodular.com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!----- End Footer content ------->
+
     <!-- start scroll to top  -->
     <div class="top">
-      <a href="javascript:;"
+      <a href="https://wa.me/+919840812344"
         ><img src="./pic/whatsapp.png" alt="Sticky-btn"
       /></a>
-      <a href="javascript:;"><img src="./pic/call.png" alt="Sticky-btn" /></a>
+      <a href="tel:9840812344"><img src="./pic/call.png" alt="Sticky-btn" /></a>
     </div>
     <!-- end scroll to top  -->
 
@@ -627,14 +787,10 @@
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
     ></script>
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-      crossorigin="anonymous"
     ></script>
     <script defer src="main.js"></script>
   </body>

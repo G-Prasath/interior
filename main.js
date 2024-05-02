@@ -39,59 +39,19 @@ function myFun() {
 }
 myFun();
 
-// function myVideo(){
-//     let links = document.querySelector(".link_a");
-//     let overs = document.querySelector(".bg-show .overlay");
-//     let exit = document.querySelector(".cancel");
-//     let player = document.querySelector(".player");
-//     let videos = document.getElementById("video");
-//     links.onclick = (ed)=>{
-//         ed.preventDefault();
-//         overs.style.display = "block"
-//     }
-//     exit.onclick = ()=>{
-//         overs.style.display = "none"
-//     }
-//     player.onclick = ()=>{
-//         if(videos.paused){
-//             videos.play();
-//             player.src = "pic/pause.png"
-//         }else{
-//             videos.pause();
-//             player.src = "pic/play.png"
-//         }
-//     }
-// }
-// myVideo();
-
-// function toTop() {
-//   let top = document.querySelectorAll(".top a i");
-//   window.onscroll = () => {
-//     if (window.scrollY > 100 || document.documentElement.scrollTop > 100) {
-//       top.style.color = "red";
-//     } else {
-//       top.style.color = "red";
-//     }
-//   };
-
-//   top.onclick = () => {
-//     scrollTo(0, 0);
-//   };
-// }
-// toTop();
 
 function validateForm(formId) {
   // Get form inputs
-  var name = document.querySelector(".name").value;
-  var email = document.querySelector(".email").value;
-  var phone = document.querySelector(".phone").value;
-  var msg = document.querySelector(".msg").value;
+  var name = document.querySelector("#"+formId+" "+".name").value;
+  var email = document.querySelector("#" + formId + " " + ".email").value;
+  var phone = document.querySelector("#" + formId + " " + ".phone").value;
+  var msg = document.querySelector("#" + formId + " " + ".msg").value;
 
   // Reset error message
-  var nameError = document.getElementById("error-name");
-  var emailError = document.getElementById("error-email");
-  var phoneError = document.getElementById("error-phone");
-  var msgError = document.getElementById("error-msg");
+  var nameError = document.querySelector("#" + formId + " " + ".error-name");
+  var emailError = document.querySelector("#" + formId + " " + ".error-email");
+  var phoneError = document.querySelector("#" + formId + " " + ".error-phone");
+  var msgError = document.querySelector("#" + formId + " " + ".error-msg");
 
   nameError.textContent = "";
   emailError.textContent = "";
