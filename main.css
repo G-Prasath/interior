@@ -197,7 +197,7 @@ header.active #bar {
 }
 .bg-form > form {
   width: 500px;
-  padding: 25px;
+  padding: 15px;
   border: 1px solid #fff;
   border-radius: 5px;
   backdrop-filter: blur(20px);
@@ -424,33 +424,33 @@ header.active #bar {
   font-weight: 700;
   font-family: "Fenix", serif;
 }
-.about-title p:not(:first-child){
-    line-height: 28px;
-    text-align: justify;
+.about-title p:not(:first-child) {
+  line-height: 28px;
+  text-align: justify;
 }
-.about-btn{
-    margin-top: 30px;
+.about-btn {
+  margin-top: 30px;
 }
-.about-btn a{
-    text-decoration: none;
-    border: 1px solid #007bff;
-    padding: 10px 15px;
-    margin-top: 80px;  
+.about-btn a {
+  text-decoration: none;
+  border: 1px solid #007bff;
+  padding: 10px 15px;
+  margin-top: 80px;
 }
-.about-btn a:hover{
-    background-color: #007bff;
-    color: #fff;
+.about-btn a:hover {
+  background-color: #007bff;
+  color: #fff;
 }
 @media (max-width: 991px) {
-    .about-sec{
-        flex-direction: column;
-    }
-    .about-right{
-        width: 100%;
-    }
-    .about-left img{
-        width: 100%;
-    }
+  .about-sec {
+    flex-direction: column;
+  }
+  .about-right {
+    width: 100%;
+  }
+  .about-left img {
+    width: 100%;
+  }
 }
 
 /* ------------------ 4th Our Projects --------------  */
@@ -671,7 +671,6 @@ header.active #bar {
   flex-direction: column;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
-
 }
 
 .product-image .overlay h6 {
@@ -680,27 +679,27 @@ header.active #bar {
   font-weight: bold;
 }
 .product-image .overlay p {
-    padding: 5px 10px;
+  padding: 5px 10px;
   line-height: 27px;
   font-size: 14px;
   color: #777777;
 }
-.overlay-btn{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 0px;
+.overlay-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0px;
 }
-.overlay-btn a{
-    text-decoration: none;
-    border: 1px solid #007bff;
-    padding: 5px 12px;
-    transition: all .3s ease-in-out;
+.overlay-btn a {
+  text-decoration: none;
+  border: 1px solid #007bff;
+  padding: 5px 12px;
+  transition: all 0.3s ease-in-out;
 }
-.overlay-btn a:hover{
-    color: #fff;
-    background-color: #007bff;
-    transition: all .3s ease-in-out;
+.overlay-btn a:hover {
+  color: #fff;
+  background-color: #007bff;
+  transition: all 0.3s ease-in-out;
 }
 
 /* .product-one:hover .product-image .overlay h6 {
